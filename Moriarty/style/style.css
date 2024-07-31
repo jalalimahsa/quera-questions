@@ -1,0 +1,122 @@
+/* do not change this code */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(70, 50, 13, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 70rem;
+    height: 70rem;
+}
+
+.container>img {
+    position: absolute;
+}
+
+.container>img:nth-child(1) {
+    top: 50rem;
+    left: 50rem;
+}
+
+.container>img:nth-child(2) {
+    top: -10rem;
+    left: 40rem;
+}
+
+.container>img:nth-child(3) {
+    top: 30rem;
+    left: 0;
+}
+
+.container>img:nth-child(4) {
+    top: 0rem;
+    left: -20rem;
+}
+
+/* write your code here */
+@keyframes puzzle1 {
+    50% {
+        top: 30rem;
+        left: 30rem;
+    }
+
+    100% {
+        top: 0rem;
+        left: 2rem;
+    }
+}
+
+@keyframes puzzle2 {
+    50% {
+        top: -5rem;
+        left: 25rem;
+    }
+
+    100% {
+        top: 25.5rem;
+        left: 2rem;
+    }
+}
+
+@keyframes puzzle3 {
+    50% {
+        top: 15rem;
+        left: 15rem;
+    }
+
+    100% {
+        top: 0rem;
+        left: 32rem;
+    }
+}
+
+@keyframes puzzle4 {
+    50% {
+        top: 17rem;
+        left: 15rem;
+    }
+
+    100% {
+        top: 30.5rem;
+        left: 26.8rem;
+    }
+}
+
+.container>img:nth-child(1) {
+    animation: puzzle1 3s forwards;
+    -webkit-animation: puzzle1 3s forwards;
+}
+
+.container>img:nth-child(2) {
+    animation: puzzle2 3s forwards;
+    -webkit-animation: puzzle2 3s forwards;
+}
+
+.container>img:nth-child(3) {
+    animation: puzzle3 3s forwards;
+    -webkit-animation: puzzle3 3s forwards;
+}
+
+.container>img:nth-child(4) {
+    animation: puzzle4 3s forwards;
+    -webkit-animation: puzzle4 3s forwards;
+}
